@@ -29,10 +29,11 @@ jobs:
 
       - name: 🚀 Run digest
         env:
+          GOOGLE_SHEET_CSV_URL: ${{ vars.GOOGLE_SHEET_CSV_URL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          USE_LLM: ${{ vars.USE_LLM }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py --once

@@ -1,0 +1,10 @@
+enabled,channel_id,channel_name,topic,topic_label,emoji,news_language,digest_language,max_articles,custom_instructions
+true,@science_ru,Наука и политика RU,научные открытия исследования,Наука,🔬,ru,русском,5,"Особое внимание — новым научным открытиям и интересным исследованиям с практическим или прорывным значением. Без сенсационщины и дублей."
+true,@science_ru,Наука и политика RU,политика России,Политика РФ,🏛️,ru,русском,5,"Особое внимание — новым научным открытиям и интересным исследованиям с практическим или прорывным значением. Без сенсационщины и дублей."
+true,@science_ru,Наука и политика RU,мировые конфликты война,Мировые конфликты,⚔️,ru,русском,3,"Особое внимание — новым научным открытиям и интересным исследованиям с практическим или прорывным значением. Без сенсационщины и дублей."
+true,@tech_daily_en,Tech Daily,artificial intelligence breakthroughs,AI,🤖,en,English,3,"Concise headlines. Focus on product launches and research with real-world impact. No crypto spam."
+true,@tech_daily_en,Tech Daily,open source software releases,Open Source,💻,en,English,3,"Concise headlines. Focus on product launches and research with real-world impact. No crypto spam."
+true,@tech_daily_en,Tech Daily,cybersecurity vulnerability,Cybersecurity,🔒,en,English,2,"Concise headlines. Focus on product launches and research with real-world impact. No crypto spam."
+true,-1001234567890,Тайланд — приватный,политика Таиланда,Политика Таиланда,🇹🇭,ru,русском,4,Актуальные события в Таиланде: выборы законы протесты. Кратко и по делу.
+true,-1001234567890,Тайланд — приватный,экономика Таиланда туризм,Экономика и туризм,💰,ru,русском,3,Актуальные события в Таиланде: выборы законы протесты. Кратко и по делу.
+false,@archived_digest,Архивный канал,technology news,Technology,📰,en,English,5,Канал отключён — строка не обрабатывается.
