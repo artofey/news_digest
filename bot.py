@@ -127,10 +127,10 @@ def create_simple_digest(articles: list[dict]) -> str:
 
     lines: list[str] = []
     topic_emoji = {
-        "artificial intelligence": "🤖",
-        "technology startups": "🚀",
-        "financial markets": "📈",
-        "science discoveries": "🔬",
+        "научные открытия исследования": "🔬",
+        "политика России": "🇷🇺",
+        "политика Таиланда": "🇹🇭",
+        "мировые конфликты война": "⚔️",
     }
 
     for topic in topics:
@@ -138,7 +138,7 @@ def create_simple_digest(articles: list[dict]) -> str:
         if not items:
             continue
         emoji = topic_emoji.get(topic, "📌")
-        lines.append(f"*{emoji} {topic.title()}*")
+        lines.append(f"*{emoji} {topic}*")
         for art in items:
             title = art["title"].replace("*", "").replace("_", "")
             url = art.get("url", "")
