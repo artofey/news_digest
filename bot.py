@@ -21,8 +21,8 @@ load_dotenv()
 with open("config.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 
-ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6")
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "anthropic").lower()
+ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL") or "claude-sonnet-4-6"
+LLM_PROVIDER = (os.getenv("LLM_PROVIDER") or "anthropic").lower()
 
 _anthropic_client: Anthropic | None = None
 
@@ -224,7 +224,7 @@ def create_digest_with_openai(articles: list[dict]) -> str:
     if not api_key:
         raise ValueError("OPENAI_API_KEY не задан")
 
-    model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    model = os.getenv("OPENAI_MODEL") or "gpt-4o-mini"
     client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
         model=model,
